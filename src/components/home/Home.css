@@ -1,0 +1,181 @@
+.home{
+  width: 100%;
+}
+
+.profile{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.profile h2{
+  font-size: 30px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+
+}
+.profile button{
+  padding: 10px;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid red;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 17px;
+}
+.profile button:hover{
+  background-color: red;
+}
+
+.todoFrom{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+.todoCont{
+  /* width: 35%; */
+  width: 500px;
+}
+.todoCont form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.todoCont form input{
+  padding: 10px;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid white;
+  font-size: 20px;
+  color: purple;
+  border-radius: 5px;
+}
+.todoCont form input::placeholder,
+.todoCont form textarea::placeholder{
+  color: rgba(139, 0, 139, 0.507);
+}
+.todoCont form textarea{
+  border-radius: 5px;
+  color: purple;
+  font-size: 20px;
+  resize: none;
+  outline: none;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+.todoCont form button{
+  border-radius: 6px;
+  border: 1px solid #46e141;
+  background-color: transparent;
+  font-size: 18px;
+  padding: 10px 0;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.todoCont form button:hover{
+  background-color: #46e141;
+}
+.todoList{
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff2c;
+  margin-top: 10px;
+  border-radius: 6px;
+  gap: 15px;
+}
+.todoList > h3{
+  color: #ffffff83;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.todos{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffffc5;
+  border-radius: 6px;
+  box-shadow: 0 3px 3px #686868;
+}
+.todos h3{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #01afff;
+  font-size: 25px;
+}
+.todos p{
+  margin-top: 5px;
+  color: #5f3df5;
+  font-family: "Inconsolata", monospace;
+  font-size: 20px;
+}
+.todos div:last-child{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.todos > div > button{  
+  color: red;
+  background-color: transparent;
+  border: 1px solid red;
+  padding: 5px 9px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.2s;
+}
+.todos > div > button:hover{
+  background-color: red;
+  color: #fff;
+}  
+.todos > div > div > button{  
+  border: 1px solid #01afff;
+  padding: 4px 7px;
+  background: none;
+  border-radius: 12px;
+  color: #01afff;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 20px;
+}
+.todos > div > div > button:hover{
+  color: #fff;
+  background: #01afff;
+} 
+
+@media (max-width: 800px) {
+  .todoCont{
+    width: 90%;
+  }
+
+}
+@media (max-width: 740px) {
+  .profile h2{
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 580px) {
+  .profile{
+    padding: 30px 5px;
+    
+  }
+}
+@media (max-width: 450px) {
+  .profile h2{
+    font-size: 15px;
+  }
+  .profile button{
+    font-size: 12px;
+  }
+}

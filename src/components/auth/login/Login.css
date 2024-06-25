@@ -75,6 +75,16 @@
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+#eye{
+  position: absolute;
+  right: 10px;
+  background: none;
+  border-radius: 50%;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
 .btn-links button{
   width: 50%;
   background-color: transparent;

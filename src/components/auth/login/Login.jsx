@@ -8,6 +8,7 @@ function Login(props) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [loginError, setLoginError] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
 
   const handleChange = (e, setValue) => {
     setValue(e.target.value);
@@ -58,9 +59,11 @@ function Login(props) {
           <label htmlFor="loginUsername">Your Label</label>
         </div>
         <div>
-          <input id="loginPassword" type="password" value={password} 
+          <input id="loginPassword" type={!showPassword ?  "password" : "text"} value={password} 
             onChange={(e) => handleChange(e, setPassword)} 
           />
+          <button id="eye" type="button" onClick={() => setShowPassword(!showPassword)}
+            >{showPassword ? "😳" : "😌"}</button>
           <label htmlFor="loginPassword">Password</label>
         </div>
         <div className="btn-links">
